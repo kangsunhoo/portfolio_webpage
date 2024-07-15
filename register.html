@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        
+        <style>
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif;
+    }
+    h1, h2 {
+    color: #333;
+    text-align: center;
+}
+    nav {
+    background-color: #327bfa;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #327bfa;
+    color: #333;
+}
+    main {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        color: skyblue;
+        margin-bottom: 20px;
+    }
+    label {
+        margin-right: 10px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select,
+    input[type="submit"] {
+        margin: 15px 0;
+        padding: 10px;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: skyblue;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin: 0 5px;
+    }
+    /* 푸터 스타일 */
+    footer {
+    background-color: #327bfa;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+    /* Additional styling as per your form structure */
+</style>
+    </style>
+</head>
+<body>
+    <h1 style="color: skyblue;">회원가입 페이지</h1>
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="introduce.html">소개</a>
+        <a href="projects.html">프로젝트</a>
+        <a href="register.html">회원가입</a>
+    </nav>
+    <main>
+       
+        <form action="/submit-for" method="get">
+
+            <h2 style="color: skyblue;" > 회원가입</h2>
+            
+            <div>
+                <label for="username">이름</label>
+                <input type="text" name="username" id="username" placeholder="이름을 입력해 주세요">
+            </div>
+
+            <div>
+                <label for="userid">아이디</label>
+                <input type="text" name="userid" id="userid" placeholder="아이디를 입력해 주세요">
+            </div>
+
+            <div>
+                <label for="userpassword">비밀번호</label>
+                <input type="password" name="userpassword" id="userpassword" placeholder="비밀번호를 입력해 주세요">
+            </div>
+
+        <div>
+            <b>나이</b><br>
+            <input type="radio" name="userage" id="userage1">
+            <label for="userage1">10~20대</label><br>
+            <input type="radio" name="userage" id="userage2">
+            <label for="userage2">30~40대</label><br>
+            <input type="radio" name="userage" id="userage3">
+            <label for="userage3">50~60대</label><br>
+            
+        
+
+        
+            <b>성별</b><br>
+            <input type="radio" name="usergender" id="usergender1">
+            <label for="usergender1">여자</label>
+           <br>
+           <input type="radio" name="usergender" id="usergender2">
+            <label for="usergender2">남자</label>
+            <br>
+        </div>
+
+        <div>
+        <label for="useremail">이메일</label>
+        <input type="email" name="useremail" id="useremail">
+        <select name="option" id="dropdown">
+            <option value="email">naver.com</option>
+            <option value="email">daum.com</option>
+            <option value="email">google.com</option>
+        </select><br>
+        </div>
+
+        <input type="submit" value="가입하기">
+    </form>
+    
+    </main>
+    <footer>
+        2024강선후 포트폴리오
+    </footer>
+    </body>
+</html>

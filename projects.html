@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* 내비게이션 스타일 */
+nav {
+    background-color: #327bfa;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #00bfff;
+    color: #333;
+}
+/* 메인 콘텐츠 스타일 */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    flex: 1; /* 남은 공간을 채우도록 설정 */
+    
+}
+
+main h2 {
+    color: skyblue;
+}
+
+article {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #327bfa;
+    border-radius: 8px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+audio, video {
+    margin-top: 10px;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #327bfa;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+    </style>
+</head>
+<body>
+    <h1 style="color: skyblue;">프로젝트페이지</h1>
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="introduce.html">소개</a>
+        <a href="contact.html">연락처</a>
+        <a href="register.html">회원가입</a>
+    </nav>
+    <main>
+        <h2 style="color: skyblue;">진행한 프로젝트</h2>
+        <article>
+            <h3 style="color: #f0f8ff;">프로젝트1</h3>
+            <h4 style="color: #f0f8ff;">ai툴을 활용한 음악제작</h4>
+            <p style="color: #f0f8ff;">음악 소개:여름이 느껴지는 듯한 음악으로 한여름 아래 서있는 듯한 느낌을 줍니다.</p>
+            <audio src="audio/여름의 추억.mp3" controls></audio>
+        </article>
+        <article>
+            <h3 style="color: #f0f8ff;">프로젝트 2</h3>
+            <h4 style="color: #f0f8ff;">ai툴을 활용한 영상제작</h4>
+            <p style="color: #f0f8ff;">영상소개:토끼와 개의 귀여움을 알려주기 위한 영상입니다.</p>
+            <video src="/vidio/66948d47e9ddcec5a6d4480e.mp4" width="640" height="500" controls></video>
+        </article>
+        <article>
+            <h3 style="color: #f0f8ff;">프로젝트 4</h3>
+            <h4 style="color: #f0f8ff;">ai툴을 활용한 영상제작</h4>
+            <video src="../vidio/66948d47e9ddcec5a6d4480e.mp4" width="640" height="500" controls></video>
+        </article>
+    </main>
+    <footer>
+        2024강선후 포트폴리오
+    </footer>
+</body>
+</html>
